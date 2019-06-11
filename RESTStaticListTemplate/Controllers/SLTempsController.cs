@@ -32,6 +32,7 @@ namespace RESTStaticListTemplate.Controllers
         [HttpGet("{id}")]
         public SLTemp GetById(int id)
         {
+            // SingleOrDefault = Returnerne et enkelt element eller null hvis der ikke er nogle element 
             return slTempsList.SingleOrDefault(sltemp => sltemp.Id == id);
         }
 
@@ -56,14 +57,27 @@ namespace RESTStaticListTemplate.Controllers
         [HttpPut("{id}")]
         public void PutSLTemp(int id, [FromBody] SLTemp value)
         {
+            // FindIndex Finder den ønskende element der passer den kriterie man har sat 
             int index = slTempsList.FindIndex(sltemp => sltemp.Id == id);
+            // Ersatter element med det man ønsker 
             slTempsList[index] = value;
+
+            //Delete and insert new customer with the old ID
+            //The position in the list is changed to the be the last one
+            //Customer oldCustomer = DeleteCustomer(id);
+            //if (oldCustomer != null)
+            //{
+            //    customer.ID = oldCustomer.ID;
+            //    cList.Add(customer);
+            //}
+            //return GetCustomer(id);
         }
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
         public bool DeleteSLTemp(int id)
         {
+            // SingleOrDefault = Returnerne et enkelt element eller null hvis der ikke er nogle element 
             return slTempsList.Remove(slTempsList.SingleOrDefault(sltemp => sltemp.Id == id));
         }
     }
