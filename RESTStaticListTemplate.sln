@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTStaticListTemplate", "RESTStaticListTemplate\RESTStaticListTemplate.csproj", "{C7D775FF-301F-4516-B12C-D312EEC3F055}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestSLTemp", "UnitTestSLTemp\UnitTestSLTemp.csproj", "{13F11630-F6EA-48E3-8011-0AEA15227670}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C7D775FF-301F-4516-B12C-D312EEC3F055}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7D775FF-301F-4516-B12C-D312EEC3F055}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7D775FF-301F-4516-B12C-D312EEC3F055}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13F11630-F6EA-48E3-8011-0AEA15227670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13F11630-F6EA-48E3-8011-0AEA15227670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13F11630-F6EA-48E3-8011-0AEA15227670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13F11630-F6EA-48E3-8011-0AEA15227670}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
