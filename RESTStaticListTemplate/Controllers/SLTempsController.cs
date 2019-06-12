@@ -15,6 +15,7 @@ namespace RESTStaticListTemplate.Controllers
     {
         public static int nextId = 0;
 
+        //Man start med at oprette en List med typen SLTemp herefter laver man object af den type
         private static List<SLTemp> slTempsList = new List<SLTemp>()
         {
             new SLTemp("Mikail", "Fener"),
